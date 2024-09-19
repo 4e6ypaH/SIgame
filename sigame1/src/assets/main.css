@@ -1,19 +1,31 @@
 @import './base.css';
 
+.mt-1 {
+  margin-top: 2px;
+}
+
+.mt-2 {
+  margin-top: 4px;
+}
+
+.mt-3 {
+  margin-top: 8px;
+}
+
 #app {
   max-width: 1280px;
-  margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
   font-size: 24px;
 }
 
-.game-page {
-  margin-left: 20%;
-  /* display:flex;
-  text-align: center;
-  justify-content: center;
-  flex-direction: column; */
+.game-table-block {
+  font-size: 32px;
+}
+
+.game-table-block a {
+  text-decoration: none;
+  color: yellow;
 }
 
 .green {
@@ -31,22 +43,3 @@ td {
   padding: 20px;
   border: solid green 1px;
 }
-/*
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
-} */

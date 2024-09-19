@@ -1,13 +1,29 @@
-<script setup>
-// import { RouterLink, RouterView } from 'vue-router'
+<script>
+import PlayersList from './components/PlayersList.vue'
+export default {
+  data() {
+    return {}
+  },
+  components: {
+    PlayersList
+  }
+}
 </script>
 
 <template>
-  <header>
-    <div class="wrapper"></div>
-  </header>
-
-  <RouterView />
+  <div>
+    <header>
+      <div class="wrapper"></div>
+    </header>
+    <div class="content">
+      <PlayersList />
+      <RouterView />
+    </div>
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.content {
+  display: flex;
+}
+</style>
